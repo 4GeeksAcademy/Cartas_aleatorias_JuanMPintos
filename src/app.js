@@ -44,5 +44,12 @@ function cartaAleatoria() {
     bottomSuit.style.color = "black";
   }
 }
-
 window.onload = cartaAleatoria;
+document.getElementById("boton").addEventListener("click", cartaAleatoria);
+reloadPageAfterDelay();
+
+function reloadPageAfterDelay() {
+  setInterval(() => {
+    cartaAleatoria();
+  }, 10000);
+}
