@@ -53,3 +53,31 @@ function reloadPageAfterDelay() {
     cartaAleatoria();
   }, 10000);
 }
+
+function changeWidth() {
+  const nuevoAncho = document.getElementById("ancho").value;
+  const carta = document.getElementById("card");
+  console.log(nuevoAncho);
+  if (nuevoAncho > 99 && nuevoAncho != "" && nuevoAncho != NaN) {
+    card.style.width = nuevoAncho + "px";
+  } else {
+    alert("Debes ingresa un valor valido");
+  }
+}
+function changeHeigth() {
+  const nuevoAlto = document.getElementById("alto").value;
+  const carta = document.getElementById("card");
+  if (nuevoAlto > 99 && nuevoAlto != "" && nuevoAlto != NaN) {
+    card.style.height = nuevoAlto + "px";
+  } else {
+    alert("Debes ingresa un valor valido");
+  }
+}
+document.getElementById("nuevoAncho").addEventListener("click", changeWidth);
+document.getElementById("nuevoAlto").addEventListener("click", changeHeigth);
+
+/*document.querySelector("#card.width").style.width = prompt(
+  "Ingrese el tamaño deseado"
+);
+document.querySelector("#card.heigth");
+*/

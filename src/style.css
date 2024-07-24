@@ -7,6 +7,7 @@ body {
   background-color: green;
   margin: 0;
 }
+
 .card {
   font-size: 80px;
   text-align: center;
@@ -20,6 +21,8 @@ body {
   padding-top: 180px;
   border: 2px solid black;
   position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 
   .top-suited {
     position: absolute;
@@ -36,6 +39,7 @@ body {
     transform: rotate(180deg);
   }
 }
+
 button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -43,6 +47,10 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: rgb(182, 182, 182);
   color: white;
+}
+
+button:hover {
+  background-color: rgb(34 39 42);
 }
